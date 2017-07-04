@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Pifagor</title>
+	</head>
+	<body>
+		<script>
+			function pifagorTable() {
+				document.write('<table>');
+				for (var i=1; i<=20; i++) {
+					console.log('**start step by i:', i, '**row index (open <tr>)');
+					document.write('<tr>');
+					for(var j=1; j<=20; j++) {
+						console.log('  j:', j, 'col index');
+						console.log('  column value:', i*j);
+						document.write('<td>'+i*j+'</td>');
+					}
+					document.write('</tr>');
+					console.log('**end step by i:', i, '**(close </tr>)');
+				}
+				document.write('</table>');
+			}
+			pifagorTable();
+		</script>
+	</body>
+</html>
